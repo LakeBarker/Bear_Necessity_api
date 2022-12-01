@@ -3,11 +3,17 @@ from rest_framework import serializers
 
 from .models.timeline import Timeline
 from .models.user import User
+from .models.event import Event
 
 class TimelineSerializer(serializers.ModelSerializer):
     class Meta:
         model = Timeline
-        fields = ('id', 'name', 'color', 'ripe', 'owner')
+        fields = ('title', 'description', 'guest_can_post', 'owner')
+
+class EventSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Event
+        fields = ()
 
 class UserSerializer(serializers.ModelSerializer):
     # This model serializer will be used for User creation
