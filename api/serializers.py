@@ -1,12 +1,12 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
-from .models.mango import Mango
+from .models.timeline import Timeline
 from .models.user import User
 
-class MangoSerializer(serializers.ModelSerializer):
+class TimelineSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Mango
+        model = Timeline
         fields = ('id', 'name', 'color', 'ripe', 'owner')
 
 class UserSerializer(serializers.ModelSerializer):

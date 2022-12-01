@@ -1,5 +1,5 @@
 from django.urls import path
-from .views.mango_views import Mangos, MangoDetail
+from .views.timeline_views import Mangos, MangoDetail
 from .views.user_views import SignUp, SignIn, SignOut, ChangePassword
 
 urlpatterns = [
