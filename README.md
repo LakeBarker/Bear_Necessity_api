@@ -7,7 +7,8 @@
 1. HTML
 2. Python
 3. Django
-4. Express
+4. React
+5. Bootstrap
 
 # User Stories
 As an owner, I want to...
@@ -28,6 +29,34 @@ As a viewer I want to...
 1. See the timeline
 2. click on and see events
 3. be able to comment on events
+
+# Route Tables
+
+## Authentication
+| Type  | URL Pattern | Controller  |
+-------------------------------------
+| POST  | '/sign-up/'  | 'users#signup'|
+| POST  | '/sign-in/'  | 'users#signin'|
+| PATCH | '/change-password/'  | 'users#changepw'|
+| DELETE | '/sign-out/'  | 'users#signout'|
+
+## Timelines
+| Type  | URL Pattern | Controller  |
+-------------------------------------
+| POST  | '/timelines'  | 'timeline#create'|
+| GET  | '/timelines/'  | 'timelines#inedex'|
+| GET  | '/timelines/:timelineId'  | 'timelines#show'|
+| PATCH | '/timeline/:timelineId'  | 'timeline#update'|
+| DELETE | '/timeline/:timelineId'  | 'timeline#delete'|
+
+## Events
+| Type  | URL Pattern | Controller  |
+-------------------------------------
+| POST  | '/events'  | 'event#create'|
+| GET  | '/events/'  | 'events#inedex'|
+| GET  | '/events/:eventId'  | 'events#show'|
+| PATCH | '/event/:eventId'  | 'event#update'|
+| DELETE | '/event/:eventId'  | 'event#delete'|
 
 # Wireframes
 
