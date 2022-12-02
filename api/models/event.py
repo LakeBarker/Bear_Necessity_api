@@ -5,6 +5,7 @@ from django.contrib.auth import get_user_model
 class Event(models.Model):
   # define fields
   # https://docs.djangoproject.com/en/3.0/ref/models/fields/
+  id = models.AutoField(primary_key=True)
   title = models.CharField(max_length=100)
   description = models.CharField(max_length=2000)
   upload = models.ImageField(upload_to ='uploads/')
