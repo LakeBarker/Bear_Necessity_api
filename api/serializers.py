@@ -13,7 +13,7 @@ class TimelineSerializer(serializers.ModelSerializer):
 class EventSerializer(serializers.ModelSerializer):
     class Meta:
         model = Event
-        fields = ()
+        fields = ('title', 'description', 'upload','owner')
 
 class UserSerializer(serializers.ModelSerializer):
     # This model serializer will be used for User creation
