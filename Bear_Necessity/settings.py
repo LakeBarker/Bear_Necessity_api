@@ -25,11 +25,12 @@ if os.getenv('ENV') == 'development':
   DB_NAME = os.getenv('DB_NAME_DEV')
   DB = {
       'ENGINE': 'django.db.backends.postgresql',
-      'NAME': DB_NAME,
+      'NAME':'BearNecessitydb',
   }
   # Set debug to true
   DEBUG = True
   # Only allow locally running client at port 3000 for CORS
+#   CORS_ORIGIN_ALLOW_ALL=True
   CORS_ORIGIN_WHITELIST = ['http://localhost:3000']
 else:
   # If we are on production, use the dj_database_url package
