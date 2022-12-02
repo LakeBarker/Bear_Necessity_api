@@ -34,7 +34,7 @@ As a viewer I want to...
 
 ## Authentication
 | Type  | URL Pattern | Controller  |
--------------------------------------
+|-------|-------------|-------------|
 | POST  | '/sign-up/'  | 'users#signup'|
 | POST  | '/sign-in/'  | 'users#signin'|
 | PATCH | '/change-password/'  | 'users#changepw'|
@@ -42,7 +42,7 @@ As a viewer I want to...
 
 ## Timelines
 | Type  | URL Pattern | Controller  |
--------------------------------------
+|-------|-------------|-------------|
 | POST  | '/timelines'  | 'timeline#create'|
 | GET  | '/timelines/'  | 'timelines#inedex'|
 | GET  | '/timelines/:timelineId'  | 'timelines#show'|
@@ -51,7 +51,7 @@ As a viewer I want to...
 
 ## Events
 | Type  | URL Pattern | Controller  |
--------------------------------------
+|-------|-------------|-------------|
 | POST  | '/events'  | 'event#create'|
 | GET  | '/events/'  | 'events#inedex'|
 | GET  | '/events/:eventId'  | 'events#show'|
